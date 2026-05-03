@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+<meta charset="UTF-8">
+<title>Sunnaten Mubarak</title>
+
+<style>
+body {
+    background: black;
+    color: white;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+/* Animation Background */
+body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, green, black, green);
+    background-size: 400% 400%;
+    animation: bgAnimation 10s infinite;
+    z-index: -1;
+}
+
+@keyframes bgAnimation {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    color: lime;
+    padding: 20px;
+}
+
+/* Box Style */
+.box {
+    border: 1px solid lime;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.7);
+}
+
+/* Image Placeholder */
+.image {
+    border: 2px dashed white;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>نبی پاک ﷺ کی سنتیں مبارک ✨</h1>
+<p style="text-align:center; color: lightgreen;">
+ان پر عمل کریں اور دوسروں کو بھی بتائیں ❤️
+</p>
+
+<div class="box">
+<p>1️⃣ مسواک کرنا 🙂</p>
+<div class="image">Image</div>
+</div>
+
+<div class="box">
+<p>2️⃣ سلام کرنا ❤️</p>
+<div class="image">Image</div>
+</div>
+
+<div class="box">
+<p>3️⃣ سیدھے ہاتھ سے کھانا 🍽️</p>
+<div class="image">Image</div>
+</div>
+
+<div class="box">
+<p>4️⃣ پانی بیٹھ کر پینا 💧</p>
+<div class="image">Image</div>
+</div>
+
+<div class="box">
+<p>5️⃣ سچ بولنا ✔️</p>
+<div class="image">Image</div>
+</div>
+
+<div class="box">
+<p>6️⃣ مسکرانا 😊</p>
+<div class="image">Image</div>
+</div>
+
+<div class="box">
+<p>7️⃣ صفائی رکھنا 🧼</p>
+<div class="image">Image</div>
+</div>
+
+<div class="box">
+<p>8️⃣ وقت پر نماز پڑھنا 🕌</p>
+<div class="image">Image</div>
+</div>
+
+<div class="box">
+<p>9️⃣ بڑوں کا احترام کرنا 🤝</p>
+<div class="image">Image</div>
+</div>
+
+<div class="box">
+<p>🔟 دوسروں کی مدد کرنا 💚</p>
+<div class="image">Image</div>
+</div>
+
+</body>
+</html>

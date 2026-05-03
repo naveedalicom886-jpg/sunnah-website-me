@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+<meta charset="UTF-8">
+<title>اسلامی صفحہ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:Arial;
+direction:rtl;
+color:#fff;
+
+/* Two color mixed background */
+background:linear-gradient(135deg,#000000,#0b3d2e);
+overflow:hidden;
+}
+
+/* soft glow animation */
+.glow{
+position:absolute;
+width:350px;
+height:350px;
+background:radial-gradient(circle,#00ff99,transparent 70%);
+filter:blur(120px);
+animation:move 6s infinite alternate;
+}
+
+@keyframes move{
+0%{top:10%;right:10%;}
+100%{top:70%;right:70%;}
+}
+
+.container{
+text-align:center;
+z-index:2;
+max-width:420px;
+}
+
+/* LOGO */
+.logo-box{
+display:flex;
+flex-direction:column;
+align-items:center;
+animation:float 3s infinite ease-in-out;
+}
+
+@keyframes float{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-10px);}
+}
+
+/* Text logo */
+.title{
+margin-top:10px;
+font-size:28px;
+color:#00ff99;
+text-shadow:0 0 15px #00ff99;
+}
+
+/* Urdu text */
+p{
+color:#ccc;
+margin-top:10px;
+}
+
+/* button */
+button{
+margin-top:25px;
+padding:10px 18px;
+border:1px solid #00ff99;
+background:transparent;
+color:#00ff99;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+background:#00ff99;
+color:#000;
+}
+
+/* hidden hadith */
+.hadith{
+margin-top:20px;
+display:none;
+color:#fff;
+}
+</style>
+</head>
+
+<body>
+
+<div class="glow"></div>
+
+<div class="container">
+
+<!-- LOGO -->
+<div class="logo-box">
+
+<!-- Simple burqa/niqab girl SVG icon -->
+<svg width="120" height="120" viewBox="0 0 24 24" fill="none">
+<path d="M12 2C9 2 7 4 7 7V10C7 13 9 16 12 16C15 16 17 13 17 10V7C17 4 15 2 12 2Z" fill="#000"/>
+<path d="M5 22C5 18 8 16 12 16C16 16 19 18 19 22" fill="#111"/>
+<path d="M9 9h6" stroke="#00ff99" stroke-width="1"/>
+<path d="M8 12h8" stroke="#00ff99" stroke-width="1"/>
+</svg>
+
+<div class="title">☪ اسلامی سنّت</div>
+
+</div>
+
+<p id="welcome">
+🌙 خوش آمدید! سنت کے مطابق اپنی زندگی کو بہتر بنائیں۔
+</p>
+
+<div class="hadith" id="hadith">
+📖 "تم میں بہترین وہ ہے جو دوسروں کے لیے بہترین ہو۔"
+</div>
+
+ <button onclick="window.location.href='page2.html'">
+سنت کے مطابق چلیں →
+</button>
+
+</div>
+
+<script>
+function changeView(){
+document.getElementById("welcome").style.display="none";
+document.getElementById("hadith").style.display="block";
+}
+</script>
+
+</body>
+</html>
